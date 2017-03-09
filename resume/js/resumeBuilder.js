@@ -27,7 +27,7 @@ topContact(topContactList);
 
 
 
-//Header image 
+//Header image yes
 var imageList = {
 	'headerImage':'images/hello-world2.png',
 	'headerAlt':'Hello World',
