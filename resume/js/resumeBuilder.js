@@ -257,8 +257,8 @@ var skillsL2 = {
 	'Command line':4,
 };
 function displaySkills(){
-	var starBlack = '/images/starBlack.png';
-	var starWhite = '/images/starWhite.png';
+	var starBlack = 'images/starBlack.png';
+	var starWhite = 'images/starWhite.png';
 	var formattedaddOneWhiteStar = addOneStar.replace('%data%', starWhite);
 	var formattedaddOneBlackStar = addOneStar.replace('%data%', starBlack);
 	function stars(num){
