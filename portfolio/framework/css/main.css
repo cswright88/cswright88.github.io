@@ -1,0 +1,42 @@
+/*style.css*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans Condensed", sans-serif;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+hr {
+	border: 1px solid #7d97ad;
+}
+
+article img {
+	max-height: 170px;
+	width: auto;
+}
+
+.container-card {
+	margin: 20px;
+	background-color: transparent;
+	border: outset 2px;
+	background-color: rgba(125, 151, 173, 0.1);
+	border-color:#7d97ad;
+	padding: 10px 5px 10px 5px;
+}
+.container-card:hover{
+	background-color: rgba(125, 151, 173, 0.3);
+	box-shadow: 10px 10px 5px #888888;
+	cursor: pointer;
+}
+
+footer {
+	background-color: #2d3c49;
+	color:white;
+	height: 200px;
+}

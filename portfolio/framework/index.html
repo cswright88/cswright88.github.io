@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Portfolio Site</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Yellowtail" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<script src="js/jQuery.js" defer></script>
+		<script src="js/bootstrap.min.js" defer></script>
+		<script src="js/builder.js" defer></script>
+
+	</head>
+	<body>
+		<div class="container-fluid">
+			<header class="row">
+				<div class="col-xs-6">
+					<img class="img-responsive" src="img/logo-trans.png" alt="logo">
+				</div>
+				<div class="col-xs-6 text-right text-uppercase">
+					<h1>Christopher Wright</h1>
+					<h3>portfolio</h3>
+				</div>
+			</header>
+			<div class="row">
+				<div class="col-md-12">
+					<hr>
+				</div>
+			</div>
+			<div class="row">
+				<picture class="col-md-12">
+					<img class="img-responsive" src="http://placekitten.com/g/1500/300" alt="main Pic" >
+				</picture>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-uppercase">
+					<h2>Featured work</h2>
+				</div>
+			</div>
+			<section class="row text-center">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<article class="container-card">
+						<img class="img-responsive center-block" src="img/hertz.jpg" alt="article" data-toggle="modal" data-target="#project1">
+						<h3>Hertz On Demand App</h3>
+					</article>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<article class="container-card">
+						<img class="img-responsive center-block" src="img/cpa.jpg" alt="article" data-toggle="modal" data-target="#project2">
+						<h3>Mary Franco CPA</h3>
+					</article>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<article class="container-card">
+						<img class="img-responsive center-block" src="img/wander.jpg" alt="article" data-toggle="modal" data-target="#project3">
+						<h3>The Wandering Palette</h3>
+					</article>
+				</div>
+			</section>
+		
+			<footer>
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<p>copyright © 2017</p>
+					</div>
+				</div>
+			</footer> <!--footer end-->
+		</div>
+
+<!--begin modal divs-->
+<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">Hertz on Demand (internal system style)</h4>
+			</div>
+			<div class="modal-body">
+				<img class="img-responsive center-block" src="img/hertz.jpg" alt="project picture">
+				<p>In this project, I determined the use of the internal logistics software by communicating with team members and gathering feedback to understand how the system is used.  Doing this allowed me to determin that speed optimization is important and "the less clicks the better" model was applied to the web app to increase performance of Luxe logistics coordinators so customers who use the Hertz on demand app have a positive experience.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">Mary Franco CPA</h4>
+			</div>
+			<div class="modal-body">
+				<img class="img-responsive center-block" src="img/cpa.jpg" alt="project picture">
+				<p>This was one of the first websites that I designed from scratch and implemented the functionality of AJAX and PHP forms.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">The Wandering Pallete</h4>
+			</div>
+			<div class="modal-body">
+				<img class="img-responsive center-block" src="img/wander.jpg" alt="project picture">
+				<p>The first website that I created where I had to implement personalized plugins and payment processing.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div><!--end modal divs-->
+
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+			...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--end modal-->
+
+
+	</body>
+</html>
