@@ -29,7 +29,7 @@ topContact(topContactList);
 
 //Header image 
 var imageList = {
-	'headerImage':'images/hello-world2.png',
+	'headerImage':'resume/images/hello-world2.png',
 	'headerAlt':'Hello World',
 };
 function addHeaderImage1(){
