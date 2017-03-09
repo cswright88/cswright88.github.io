@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+<!--This is my Body, given to you, do this in rememberance of me-->
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+	
+	
+	<div id="header-wrapper">
+	<!--Nav bar-->
+		<div id="top-contact"></div>
+	<!--Header-->
+		<div id="header">
+		<div id="header-background-photo"></div>
+		</div>
+			
+	</div>
+
+<div id="smallWindow">
+<nav id="myScrollspy" class="navbar navbar-inverse" data-spy="affix" data-offset-top="597">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                  
+        </button> 
+      <a class="navbar-brand" href="#header-wrapper">Christopher Wright</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav> 
+</div>
+ 
+
+
+
+
+<div id="wrapper">
+<div id="background-body">
+
+ 
+
+
+
+	
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-9">	
+
+
+
+		<div id="jquery-hover-box"></div>
+	<!--Photo of me-->
+		<div id="photo-of-me" class></div>
+	<!--projects section-->
+		<div id="workExperience">
+			<h2>WORK EXPERIENCE</h2>
+		</div>
+		<div id="projects">
+			<h2>PROJECTS</h2>
+		</div>
+	<!--About me-->
+		<div id="about">
+			<h2>ABOUT</h2>
+
+		</div>
+	<!--why i am the best for the job-->
+		<div id="whyMe">
+			<h2>WHY ME</h2>
+		</div>
+	<!--how I work-->
+		<div id="process">
+			<h2>HOW I WORK</h2>
+		</div>
+	<!--contact me-->
+		<div id="contact">
+			<h2>CONTACT</h2>
+		</div>
+	</div> <!-- div end for col 9 -->
+
+		
+
+
+
+
+<div class="col-sm-3">
+	<div id="largeWindow">
+	<nav id="myScrollspy">
+		<ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="590">
+			
+		</ul> 
+	</nav>
+	</div>
+</div>
+
+
+</div>
+</div><!--end div for container, row,-->		
+</div>
+
+
+	<!--Footer-->
+		<div id="footer"></div>
+
+
+
+
+	</div><!--end div for wrapper-->
+
+
+
+
+
+<!--Perscriptions below VvVvVvVvVv-->
+<script src="js/jQuery.js"></script>
+<script src="js/helper.js"></script>
+<script src="js/resumeBuilder.js"></script>
+
+<script>
+//h1 is only used in the header
+	if(document.getElementsByTagName('h1').length >= 1){
+		console.log("header is activated");
+	}else{
+		console.log("h1 is not activated")
+	}
+	if(document.getElementsByClassName('top-contact-element').length === 0){
+		console.log("the top-contact bar is NOT activated");
+	}else{
+		console.log('the top-contact bar is ACTIVATED');
+	}
+	
+	
+
+</script>
+</body>
+</html>

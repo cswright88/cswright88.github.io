@@ -1,0 +1,261 @@
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+img {
+  padding: 10px;
+}
+p {
+  font-size: 14px;
+  color: #333;
+  line-height: 21px;
+}
+a {
+  color: black !important;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
+h1 {
+  font-size: 40px;
+  color: black;
+  line-height: 48px;
+  display: inline;
+}
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #999;
+  line-height: 29px;
+  padding: 10px;
+  text-shadow: 2px 2px #F2EDFF;
+}
+h3 {
+  font-style: italic;
+  font-size: 20px;
+  color: #000;
+  line-height: 22px;
+}
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 17px;
+}
+h2,
+h3,
+h4,
+h5 {
+  padding: 10px 5%;
+}
+
+
+
+
+
+
+
+#smallWindow{
+	display: none;
+}
+
+
+
+
+.top-contact-element, li{
+	display: inline;
+	padding-right:10px;
+	padding-left:10px;
+}
+#top-contact{
+	text-align: center;
+}
+#header {
+  padding:40px;
+}
+/*the header header-background photo*/
+#header-background-photo{
+	text-align: center;
+	padding:100px 0 0 0;
+}
+#header-background-photo img{
+	height: auto;
+	width: 800px;
+}
+@media (max-width: 900px) {
+	#header-background-photo img{
+		height: auto;
+		width: 700px;
+	}
+}
+@media (max-width: 800px) {
+	#header-background-photo img{
+		height: auto;
+		width: 600px;
+	}
+	#largeWindow{
+		display: none;
+	}
+	#smallWindow{
+		display: initial;
+	}
+}
+@media (max-width: 700px) {
+	#header-background-photo img{
+		height: auto;
+		width: 500px;
+	}
+}
+@media (max-width: 600px) {
+	#header-background-photo img{
+		height: auto;
+		width: 400px;
+	}
+	
+}
+
+
+
+
+
+#header-wrapper{
+	background: white;
+	box-shadow: 10px 10px 30px #92989E;
+	height:600px;
+}
+#header h3{
+	text-align: center;
+	font-family: 'Yellowtail', cursive;
+	font-size: 50px;
+}
+
+body {
+  position: relative; 
+}
+
+.affix {
+  top:0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+.navbar {
+  margin-bottom: 0px;
+  background: white;
+}
+
+.affix ~ .container-fluid {
+ position: relative;
+ top: 50px;
+}
+
+.nav-pills>li>a{border-radius:0px}
+.nav-pills>li+li{margin-left:0px}
+.nav-pills>li.active>a,.nav-pills>li.active>a:focus,.nav-pills>li.active>a:hover{color:#fff;background-color:grey}
+.navbar-nav>li.active>a,.navbar-nav>li.active>a:focus,.navbar-nav>li.active>a:hover{color:#fff !important;background-color:grey !important}
+
+
+
+
+
+
+
+#wrapper{
+	background-image: url("/Users/cswright88/Desktop/Resume-WEB-CSW/images/gears.jpg");
+	background-repeat: repeat;
+	padding:0 10px 0 10px;
+}
+#background-body{
+	background: rgba(255,255,255,0.97);
+	box-shadow: 10px 10px 30px #92989E;
+	overflow: scroll;
+}
+#workExperience, #projects, #about, #whyMe, #process, #contact{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+.affix{
+	top:0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*About and skills section*/
+
+#about img{
+	padding:0;
+	height:15px;
+	width: 15px;
+}
+
+#ulSkills{
+	height:auto;
+	width:auto;
+	display: inline;
+}
+.list-entry{
+	display: block;
+}
+.star-group{
+	float:right;
+}
+
+
+
+
+
+.clear-fix {
+  overflow: auto;
+}
+.education-entry,
+.work-entry,
+.project-entry {
+  padding: 0 5%;
+}
+.date-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+  line-height: 16px;
+  float: left;
+}
+.location-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+  line-height: 16px;
+  float: right;
+}
+
+
+
+
