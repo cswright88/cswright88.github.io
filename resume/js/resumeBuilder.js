@@ -29,7 +29,7 @@ topContact(topContactList);
 
 //Header image 
 var imageList = {
-	'headerImage':'/Users/cswright88/Desktop/Resume-WEB-CSW/images/hello-world2.png',
+	'headerImage':'/images/hello-world2.png',
 	'headerAlt':'Hello World',
 };
 function addHeaderImage1(){
@@ -257,8 +257,8 @@ var skillsL2 = {
 	'Command line':4,
 };
 function displaySkills(){
-	var starBlack = '/Users/cswright88/Desktop/Resume-WEB-CSW/images/starBlack.png';
-	var starWhite = '/Users/cswright88/Desktop/Resume-WEB-CSW/images/starWhite.png';
+	var starBlack = '/images/starBlack.png';
+	var starWhite = '/images/starWhite.png';
 	var formattedaddOneWhiteStar = addOneStar.replace('%data%', starWhite);
 	var formattedaddOneBlackStar = addOneStar.replace('%data%', starBlack);
 	function stars(num){
