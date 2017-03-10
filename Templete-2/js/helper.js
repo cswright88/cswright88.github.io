@@ -69,7 +69,7 @@ var aboutNameAndFacePic = `
 	<p><b><i class="fa fa-user w3-margin-right">
 	</i>My Name</b></p>
 	<br>
-	<img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+	<img src="images/chris1.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
 	</div>
 `;
 var SmHiddenParagraph = `
