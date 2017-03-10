@@ -140,7 +140,7 @@ var addAllPortfolioSection =`
 
 	<div class="w3-row-padding w3-center">
 	<div class="w3-col m3">
-	<img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+	<img src="images/chris3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
 	</div>
 
 	<div class="w3-col m3">
