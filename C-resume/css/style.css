@@ -182,7 +182,7 @@ span {
 
 #lets-connect {
   text-align: center;
-  background-image: url("/bgimg/nightsky.jpg");
+  background-image: url("bgimg/nightsky.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
