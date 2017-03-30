@@ -1,0 +1,28 @@
+body {
+	text-align: center;
+	background-color: black;
+}
+
+h1, h2 {
+	color: white;
+}
+
+canvas {
+	display: inline-flex;
+	float: left;
+}
+
+#stats {
+	display: inline-flex;
+	float: left;
+	padding-left: 5%;
+	padding-top: 5%;
+}
+
+#lifeScore {
+	display: table-column-group;
+}
+
+#livesNum, #scoreNum {
+	font-size: 50px;
+}
