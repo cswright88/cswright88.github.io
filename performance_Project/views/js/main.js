@@ -455,11 +455,13 @@ var resizePizzas = function(size) {
       var dx = determineDx(randomPizzaContainer[i], size);
       var newwidth = (randomPizzaContainer[i].offsetWidth + dx) + 'px';
       list.push(newwidth);
-      // randomPizzaContainer[i].style.width = newwidth;
+      //I pushed the layout elements into an array called list
     }
     var n = 0;
     for (var c = 0; c < randomPizzaContainer.length; c++) {
+      //change the style of the element and pull an element from the array
       randomPizzaContainer[c].style.width = list[n];
+      //add one to the element of the list to pull the next one
       n++;
     }
   }
