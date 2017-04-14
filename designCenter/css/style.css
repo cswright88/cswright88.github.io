@@ -1,0 +1,24 @@
+/*style.css*/
+body {
+
+
+}
+
+#design_images {
+	width:2000px;
+}
+
+#img {
+	width:1000px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: black
+	margin:10px;
+	padding:10px;
+}
+
+img {
+	height: auto;
+	width:1000px;
+	
+}
