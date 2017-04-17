@@ -1,8 +1,27 @@
+## Christopher Wright's improvements
+
+### First run the website
+
+Go to these sites git hub hosted site which shows the final draft of my project:
+[Pizza site improved](https://cswright88.github.io/cswright88.github.io/performance_Project/views/pizza.html)
+[the index page](https://cswright88.github.io/cswright88.github.io/performance_Project/) running with a 90% PageSpeeds insights score 
+
+### Improvements for the Index page
+
+I optimize the large image from the Pizza site by adding a smaller version of that photo for the index site.  I also removed the external style sheet and added the style rules in the index file.  I also added print media tag to the print.css to prevent it from loading.  With async added to the stylesheets to allow js files to load after 
+
+### Improvements on the pizza site
+
+Computational Efficiency: the time to resize the Pizzas when you click the slider is less than 5 ms now.  This was done probably a little bit differently than most but I basically added an array to push all the layout elements into an array to be used by the next for loop where I changed the style elements and used the layout elements from the array to prevent FSL.  
+Frame Rate: hits at an average of 60 FPS by adding var scrolltop = document.body.scrollTop; outide of the for loop in the updatePositions function preventing FSL.  
+
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
 To get started, check out the repository and inspect the code.
+
 
 ### Getting started
 
