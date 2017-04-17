@@ -3,12 +3,12 @@
 ### First run the website
 
 Go to these sites git hub hosted site which shows the final draft of my project:
-[Pizza site improved](https://cswright88.github.io/cswright88.github.io/performance_Project/views/pizza.html)
-[the index page](https://cswright88.github.io/cswright88.github.io/performance_Project/) running with a 90% PageSpeeds insights score 
+[Pizza site improved](https://cswright88.github.io/cswright88.github.io/Website_Optimization/src/views/pizza.html)
+[the index page](https://cswright88.github.io/cswright88.github.io/Website_Optimization/src/) running with a 90% PageSpeeds insights score 
 
 ### Improvements for the Index page
 
-I optimize the large image from the Pizza site by adding a smaller version of that photo for the index site.  I also removed the external style sheet and added the style rules in the index file.  I also added print media tag to the print.css to prevent it from loading.  With async added to the stylesheets to allow js files to load after 
+I optimized the large image from the Pizza site by adding a smaller version of that photo for the index site.  I also removed the external style sheet and added the style rules in the index file.  I also added print media tag to the print.css to prevent it from loading.  With async added to the stylesheets to allow js files to load after 
 
 ### Improvements on the pizza site
 
