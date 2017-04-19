@@ -553,24 +553,18 @@ function updatePositions() {
 
 // runs updatePositions on scroll
 window.addEventListener('scroll', updatePositions);
-//TODO make this webworker work...
 
-ww = new Worker("webWorker.js");
-ww.onmessage = function(event) {
-    return event.data;
-}
 
 // Generates the sliding pizzas when the page loads.
 document.addEventListener('DOMContentLoaded', function() {
     // for every 256 in window width add a row
     //this causes a forced reflow on load but it does not affect the scrolling after it loads 
-    ww.onmessage();
-    // var w = window.innerWidth;
+    var w = window.innerWidth;
     var numOfCols = Math.round(w/256);
     var cols = numOfCols;
     var s = 256;
     //use innerHeight to find the height of the window on the devise
-    // var h = window.innerHeight;
+    var h = window.innerHeight;
     //round the num of px in height divided by the num of px between pizzas and mulitply by the num of columns
     var numOfPizza = Math.round(h/s)*cols;
     console.log(numOfPizza);
