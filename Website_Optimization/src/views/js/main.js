@@ -553,24 +553,18 @@ function updatePositions() {
 
 // runs updatePositions on scroll
 window.addEventListener('scroll', updatePositions);
+//TODO make this webworker work...
 
-function startWorker() {
-    if(typeof(Worker) !== "undefined") {
-        if(typeof(ww) == "undefined") {
-            ww = new Worker("webWorker.js");
-        }
-    }ww.onmessage = function(event) {
-        return event.data;
-    };
-} else {
-    console.log("sorry the browser doesn't support web workers");
-    var w = window.innerWidth;
-    var h = window.innerHeight;
+ww = new Worker("webWorker.js");
+ww.onmessage = function(event) {
+    return event.data;
 }
+
 // Generates the sliding pizzas when the page loads.
 document.addEventListener('DOMContentLoaded', function() {
     // for every 256 in window width add a row
     //this causes a forced reflow on load but it does not affect the scrolling after it loads 
+    ww.onmessage();
     // var w = window.innerWidth;
     var numOfCols = Math.round(w/256);
     var cols = numOfCols;
