@@ -474,6 +474,8 @@ var resizePizzas = function(size) {
         for (var i = 0; i < randomPizzaContainer.length; i++) {
             var dx = determineDx(randomPizzaContainer[i], size);
             var newwidth = (randomPizzaContainer[i].offsetWidth + dx) + 'px';
+            console.log(dx);
+            console.log(newwidth);
             list.push(newwidth);
             //I pushed the layout elements into an array called list
         }
@@ -498,8 +500,8 @@ var resizePizzas = function(size) {
 window.performance.mark("mark_start_generating"); // collect timing data
 
 // This for-loop actually creates and appends all of the pizzas when the page loads
+var pizzasDiv = document.getElementById("randomPizzas");
 for (var i = 2; i < 100; i++) {
-    var pizzasDiv = document.getElementById("randomPizzas");
     pizzasDiv.appendChild(pizzaElementGenerator(i));
 }
 
@@ -532,10 +534,9 @@ function updatePositions() {
     window.performance.mark("mark_start_frame");
     //add scrolltop var outside the for loop to prevent FSL by avoiding the layout before the property
     var scrolltop = document.body.scrollTop;
-    var items = document.querySelectorAll('.mover');
+    var items = document.getElementsByClassName('mover');
     for (var i = 0; i < items.length; i++) {
         var phase = Math.sin((scrolltop / 1250) + (i % 5));
-
         items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
 
     }
@@ -553,11 +554,33 @@ function updatePositions() {
 // runs updatePositions on scroll
 window.addEventListener('scroll', updatePositions);
 
+function startWorker() {
+    if(typeof(Worker) !== "undefined") {
+        if(typeof(ww) == "undefined") {
+            ww = new Worker("webWorker.js");
+        }
+    }ww.onmessage = function(event) {
+        return event.data;
+    };
+} else {
+    console.log("sorry the browser doesn't support web workers");
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+}
 // Generates the sliding pizzas when the page loads.
 document.addEventListener('DOMContentLoaded', function() {
-    var cols = 8;
+    // for every 256 in window width add a row
+    //this causes a forced reflow on load but it does not affect the scrolling after it loads 
+    // var w = window.innerWidth;
+    var numOfCols = Math.round(w/256);
+    var cols = numOfCols;
     var s = 256;
-    for (var i = 0; i < 200; i++) {
+    //use innerHeight to find the height of the window on the devise
+    // var h = window.innerHeight;
+    //round the num of px in height divided by the num of px between pizzas and mulitply by the num of columns
+    var numOfPizza = Math.round(h/s)*cols;
+    console.log(numOfPizza);
+    for (var i = 0; i <= numOfPizza; i++) {
         var elem = document.createElement('img');
         elem.className = 'mover';
         elem.src = "images/pizza.png";
