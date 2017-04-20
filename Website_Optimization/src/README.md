@@ -1,5 +1,9 @@
 ## Christopher Wright's improvements
 
+###Fixes
+
+I added a attribute to take into account how big the screen is to determine how many pizzas there should be
+
 ### First run the website
 
 Go to these sites git hub hosted site which shows the final draft of my project:
