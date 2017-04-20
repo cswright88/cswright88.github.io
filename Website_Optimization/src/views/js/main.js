@@ -470,12 +470,12 @@ var resizePizzas = function(size) {
     // Iterates through pizza elements on the page and changes their widths
     function changePizzaSizes(size) {
         var list = [];
-        var randomPizzaContainer = document.querySelectorAll(".randomPizzaContainer");
+        var randomPizzaContainer = document.getElementsByClassName("randomPizzaContainer");
         for (var i = 0; i < randomPizzaContainer.length; i++) {
             var dx = determineDx(randomPizzaContainer[i], size);
             var newwidth = (randomPizzaContainer[i].offsetWidth + dx) + 'px';
-            console.log(dx);
-            console.log(newwidth);
+            // console.log(dx);
+            // console.log(newwidth);
             list.push(newwidth);
             //I pushed the layout elements into an array called list
         }
@@ -529,17 +529,19 @@ function logAverageFrame(times) { // times is the array of User Timing measureme
 // https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html
 
 // Moves the sliding background pizzas based on scroll position
+
 function updatePositions() {
     frame++;
     window.performance.mark("mark_start_frame");
     //add scrolltop var outside the for loop to prevent FSL by avoiding the layout before the property
     var scrolltop = document.body.scrollTop;
     var items = document.getElementsByClassName('mover');
+
     for (var i = 0; i < items.length; i++) {
         var phase = Math.sin((scrolltop / 1250) + (i % 5));
         items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
-
     }
+
 
     // User Timing API to the rescue again. Seriously, it's worth learning.
     // Super easy to create custom metrics.
@@ -560,13 +562,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // for every 256 in window width add a row
     //this causes a forced reflow on load but it does not affect the scrolling after it loads 
     var w = window.innerWidth;
-    var numOfCols = Math.round(w/256);
+    var numOfCols = Math.round(w / 256);
     var cols = numOfCols;
     var s = 256;
     //use innerHeight to find the height of the window on the devise
     var h = window.innerHeight;
     //round the num of px in height divided by the num of px between pizzas and mulitply by the num of columns
-    var numOfPizza = Math.round(h/s)*cols;
+    var numOfPizza = Math.round(h / s) * cols;
     console.log(numOfPizza);
     for (var i = 0; i <= numOfPizza; i++) {
         var elem = document.createElement('img');
