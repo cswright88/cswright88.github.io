@@ -25,11 +25,11 @@ var addNavDemo = `
 var addHeadImgAndTitle = `
 	<div class="w3-display-middle" style="white-space:nowrap;">
 		<span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">
-			MY 
+			THE 
 		<span class="w3-hide-small">
-			WEBSITE
+			INFINATE
 		</span>
-			LOGO
+			LEIBEAR
 		</span>
 	</div>
 `;
@@ -93,40 +93,27 @@ var SmHiddenParagraph = `
 	the answer. AKA ask the Oracle (google). Reach out to me if you have any 
 	questions, follow me on social media.</p>
 `;
-var ImGoodAtSection = `
-	<p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-	<p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-	<div class="w3-light-grey">
-	<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-	</div>
-	<p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-	<div class="w3-light-grey">
-	<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-	</div>
-	<p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-	<div class="w3-light-grey">
-	<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-	</div>
-`;
-
+var imGoodTitle = '<p class="w3-large w3-center w3-padding-16">Im really good at:</p>';
+var ImGoodAtSection = '<p class="w3-wide"><i class="%fafa%"></i>%data%</p>';
+var imGoodBar = '<div class="w3-light-grey"><div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:%num%%">%percent%%</div></div>';
 
 //highlights section
 var addAllHighLightsSection = `
 	<div class="w3-row w3-center w3-dark-grey w3-padding-16">
 		<div class="w3-quarter w3-section">
-			<span class="w3-xlarge">14+</span><br>
+			<span class="w3-xlarge">2</span><br>
 			Partners
 		</div>
 		<div class="w3-quarter w3-section">
-			<span class="w3-xlarge">55+</span><br>
+			<span class="w3-xlarge">30+</span><br>
 			Projects Done
 		</div>
 		<div class="w3-quarter w3-section">
-			<span class="w3-xlarge">89+</span><br>
+			<span class="w3-xlarge">15+</span><br>
 			Happy Clients
 		</div>
 		<div class="w3-quarter w3-section">
-			<span class="w3-xlarge">150+</span><br>
+			<span class="w3-xlarge">∞</span><br>
 			Meetings
 		</div>
 	</div>
@@ -134,48 +121,12 @@ var addAllHighLightsSection = `
 
 
 //Portfolio section
-var addAllPortfolioSection =`
-	<h3 class="w3-center">MY WORK</h3>
-	<p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+var portfolioTitle = '<h3 class="w3-center">MY WORK</h3><p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>';
+var startrow1Portfolio = '<div id="row1portfolio" class="w3-row-padding w3-center"></div>';
+var startrow2Portfolio = '<div id="row2portfolio" class="w3-row-padding w3-center"></div>';
+var portfolioImg = '<div class="w3-col m3"><img src="%data%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="%alt%"></div></div>';
 
-	<div class="w3-row-padding w3-center">
-	<div class="w3-col m3">
-	<img src="images/chris3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-	</div>
 
-	<div class="w3-col m3">
-	<img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-	</div>
-
-	<div class="w3-col m3">
-	<img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-	</div>
-
-	<div class="w3-col m3">
-	<img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-	</div>
-	</div>
-
-	<div class="w3-row-padding w3-center w3-section">
-	<div class="w3-col m3">
-	<img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-	</div>
-
-	<div class="w3-col m3">
-	<img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-	</div>
-
-	<div class="w3-col m3">
-	<img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-	</div>
-
-	<div class="w3-col m3">
-	<img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-	</div>
-	<button class="w3-button w3-padding-xlarge" style="margin-top:64px">LOAD MORE</button>
-	</div>
-	</div>
-`;
 
 
 
