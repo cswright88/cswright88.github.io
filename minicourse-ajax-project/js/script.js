@@ -16,7 +16,7 @@ function loadData() {
     var cityStr = $('#city').val();
     var address = formStreet+' '+cityStr;
     $greeting.text('So, you want to live at '+ address+'?');
-    var streetviewUrl = 'https://maps.googleapis.com/maps/api/streetview?size=600x400&location='+address+'';
+    var streetviewUrl = 'http://maps.googleapis.com/maps/api/streetview?size=600x400&location='+address+'';
     $body.append('<img class="bgimg" src="'+streetviewUrl+'">');
 
     // YOUR CODE GOES HERE!
