@@ -71,7 +71,7 @@ h5 {
 
 
 
-.top-contact-element, li{
+.top-contact-element, a, li{
 	display: inline;
 	padding-right:10px;
 	padding-left:10px;
@@ -130,7 +130,7 @@ h5 {
 #header-wrapper{
 	background: white;
 	box-shadow: 10px 10px 30px #92989E;
-	height:600px;
+	height:400px;
 }
 #header h3{
 	text-align: center;
@@ -254,6 +254,10 @@ body {
   color: #999;
   line-height: 16px;
   float: right;
+}
+.navbar-header .navbar-toggle .icon-bar {
+	color: black;
+	background-color: black;
 }
 
 

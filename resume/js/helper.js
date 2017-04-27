@@ -37,8 +37,8 @@ var bootstrapAddParagraph = '<p>%data%</p>';
 var bootstrapAddImage = '<img src="%data%">';
 
 //top contact menu
-var startTopContactList = '<ul class="top-contact-element">%data%</ul>';
-var addTopContactElement = '<li>%data%</li>';
+var startTopContactList = '<ul class="top-contact-element"></ul>';
+var addTopContactElement = '<li id="%link%">%data%</li>';
 
 var addHeaderImage = '<div class="col-md-12"><img src="%data%" alt="%alt%"></div>';
 var addWelcomeMessage = '<h3>%data%</h3>'
@@ -66,7 +66,7 @@ var startListSkills = '<ul id="ulSkills"><li class="list-entry">%title%<span cla
 var addOneStar = '<img src="%data%" alt="img not found"></img>';
 
 
-var addNavElement = '<li><a href="#%data%">%name%</a></li>';
+var addNavElement = '<li class="navLiEl"><a <a class="navsclass" data-toggle="collapse" data-target=".navbar-collapse" href="#%data%">%name%</a></li>';
 
 
 var addProcessUL = '<ul>%data%</ul>';

@@ -1,24 +1,6 @@
 
 
 
-//top contact list elements
-var topContactList = {
-	'element1':'Email',
-	'element2':'Phone',
-	'element3':'Twitter',
-	'element4':'Linkedin',
-};
-
-function topContact(list1){
-	for(el in list1){
-		var formattedAddTopContactElement = addTopContactElement.replace('%data%', topContactList[el]);
-		var formattedStartTopContactList = startTopContactList.replace('%data%', formattedAddTopContactElement);
-		$('#top-contact').append(formattedStartTopContactList);
-	};
-};
-topContact(topContactList);
-
-
 
 
 
@@ -79,27 +61,37 @@ welcomeMessage();
 
 
 
+function NAVLIST() {
+	var navList = {
+		'workExperience':'Work Experience',
+		'projects':'Projects',
+		'about':'About',
+		'whyMe':'Why Me',
+		'process':'How I Work',
+		'contact':'Contact',
+	};
+	for(i in navList){
+		var formattedaddNavElement = addNavElement.replace('%data%', i).replace('%name%', navList[i]);
+		$('.nav').append(formattedaddNavElement);
+	};
+	$(document).on('click', '.navsclass', function(event){
+	    event.preventDefault();
 
-var navList = {
-	'workExperience':'Work Experience',
-	'projects':'Projects',
-	'about':'About',
-	'whyMe':'Why Me',
-	'process':'How I Work',
-	'contact':'Contact',
+	    $('html, body').animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	    }, 500);
+	});
+	$('.navsclass').hover(
+		function () {
+		$(this).css({"background-color":"lightgrey"});
+		}, 
+
+		function () {
+		$(this).css({"background-color":"initial"});
+		}	
+	);
 };
-for(i in navList){
-	var formattedaddNavElement = addNavElement.replace('%data%', i).replace('%name%', navList[i]);
-	$('.nav').append(formattedaddNavElement);
-};
-$(document).on('click', 'a', function(event){
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
-});
-
+NAVLIST();
 
 
 
@@ -149,7 +141,7 @@ function displayWork(){
 		$('#workExperience').append(HTMLworkStart);
 		var formattedEmployer = HTMLworkEmployer.replace('%data%', work.jobs[job].employer);
 		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-		var formattedEmployerTitle = formattedEmployer + formattedTitle;
+		var formattedEmployerTitle = formattedEmployer + formattedTitle + '<br>';
 		$(".work-entry:last").append(formattedEmployerTitle);
 
 		var formattedDate = HTMLworkDates.replace("%data%", work.jobs[job].date);
@@ -166,7 +158,7 @@ function displayProjects(){
 		 formattedHTMLprojectTitle = HTMLprojectTitle.replace('%data%', projects[project].title);
 		 formattedHTMLprojectDates = HTMLprojectDates.replace('%data%', projects[project].dates);
 		 formattedHTMLprojectDescription = HTMLprojectDescription.replace('%data%', projects[project].description);
-		 allTogether2 = formattedHTMLprojectTitle+formattedHTMLprojectDates+formattedHTMLprojectDescription;
+		 allTogether2 = formattedHTMLprojectTitle+'<br>'+formattedHTMLprojectDates+formattedHTMLprojectDescription;
 		$('.project-entry:last').append(allTogether2);
 	};
 };
@@ -205,7 +197,7 @@ function small3col(div, list){
 	$(div).append(formattedbootstrapContainerStart);
 };
 small3col('#whyMe', small3colList);
-small3col('#contact', small3colList);
+
 
 
 
@@ -213,15 +205,16 @@ small3col('#contact', small3colList);
 
 
 var processList = [
-"-outline",
+"-Outline",
 "-Visualize",
 "-Solve problems",
-"-write Tests",
-"-caffein",
+"-Write Tests",
+"-Caffeine",
 "-Code",
-"-make confused faces",
-"-code more",
-"-Launch ",
+"-Explain code to my dog",
+"-Code more",
+"-Finish",
+"-Launch "
 ];
 for(i in processList){
 	var formattedaddProcessElement = addProcessElement.replace('%data%', processList[i]);
