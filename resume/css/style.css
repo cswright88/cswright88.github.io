@@ -61,7 +61,9 @@ h5 {
 
 
 
+#header-wrapper {
 
+}
 
 
 #smallWindow{
@@ -78,14 +80,18 @@ h5 {
 }
 #top-contact{
 	text-align: center;
+	background-color: transparent;
 }
 #header {
   padding:40px;
+  
+
+
 }
 /*the header header-background photo*/
 #header-background-photo{
 	text-align: center;
-	padding:100px 0 0 0;
+	padding:60px 0 0 0;
 }
 #header-background-photo img{
 	height: auto;
@@ -122,13 +128,22 @@ h5 {
 	}
 	
 }
+@media (max-width: 500px) {
+	#header-background-photo img{
+		height: auto;
+		width: 300px;
+	}
+	
+}
 
 
 
 
 
 #header-wrapper{
-	background: white;
+	background-image: url(chris2.jpg);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
 	box-shadow: 10px 10px 30px #92989E;
 	height:400px;
 }
@@ -161,7 +176,9 @@ body {
 .nav-pills>li+li{margin-left:0px}
 .nav-pills>li.active>a,.nav-pills>li.active>a:focus,.nav-pills>li.active>a:hover{color:#fff;background-color:grey}
 .navbar-nav>li.active>a,.navbar-nav>li.active>a:focus,.navbar-nav>li.active>a:hover{color:#fff !important;background-color:grey !important}
-
+#largeWindow {
+	padding-right:200px;
+}
 
 
 

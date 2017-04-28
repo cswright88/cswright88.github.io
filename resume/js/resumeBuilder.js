@@ -102,18 +102,18 @@ NAVLIST();
 var work = {
 	"jobs":[
 		{
-			"employer":"Fidelity Investments",
-			"title":"Defined Contributions Representative",
-			"location":"Westlake",
-			"date":"August 2011 - December 2012",
-			"description":"processed loans withdrawals and trades in the Fidelity 401k product"
-		},
-		{
 			"employer":"Luxe Valet",
 			"title":"Logistics Coordinator",
 			"location":"Austin",
 			"date":"August 2016 - current",
 			"description":"Managed between 20-30 valets in over 6 different cities nationwide"
+		},
+		{
+			"employer":"Fidelity Investments",
+			"title":"Defined Contributions Representative",
+			"location":"Westlake",
+			"date":"August 2011 - December 2012",
+			"description":"processed loans withdrawals and trades in the Fidelity 401k product"
 		},
 		{
 			"employer":"The Wandering Palette",
@@ -134,7 +134,12 @@ var projects = {
 		"title":"Accounts recievable policy",
 		"dates":"February 2017 - March 2017",
 		"description":"Created a time saving manual proceedure to charge customers in for spcialized services quickly to increase the productivity of the Logistics coordinator role",
-	}
+	},
+	"LuxeValetWebsite":{
+		"title":"Luxe Website",
+		"dates":"March 2017 - April 2017",
+		"description":"Updated the Luxe Valet website with modern information using HTML, CSS, and JavaScript designed to improve market perception and the Customer delight Team workflow",
+	},
 };
 function displayWork(){
 	for(job in work.jobs){
@@ -232,17 +237,17 @@ for(i in processList){
 var skillsL1 = {
 	'HTML5':5,
 	'CSS3':5,
-	'JavaScript':4,
+	'JavaScript':5,
 	'PHP':3,
 	'Photoshop':2,
 	'MySQL':1,
 	'Sleep':0,
-	'JSON':1,
+	'JSON':4,
 };
 var skillsL2 = {
 	'SEO':3,
 	'WordPress':3,
-	'AngularJS':2,
+	'Knockout':3,
 	'OOP':4,
 	'JAVA':4,
 	'Bootstrap':4,
