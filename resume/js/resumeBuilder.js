@@ -202,7 +202,7 @@ function small3col(div, list){
 	$(div).append(formattedbootstrapContainerStart);
 };
 small3col('#whyMe', small3colList);
-$('#whyMe').css('font-size', '60%');
+$('#whyMe p').css('font-size', '60%');
 $('#contact').css('font-size', '90%');
 
 
