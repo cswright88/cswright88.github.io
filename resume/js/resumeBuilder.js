@@ -239,10 +239,10 @@ var skillsL1 = {
 	'HTML5':5,
 	'CSS3':5,
 	'JavaScript':5,
-	'PHP':3,
+	'PHP':2,
 	'Photoshop':2,
 	'MySQL':1,
-	'Sleep':0,
+	'Python':4,
 	'JSON':4,
 };
 var skillsL2 = {
@@ -250,7 +250,7 @@ var skillsL2 = {
 	'WordPress':3,
 	'Knockout':3,
 	'OOP':4,
-	'JAVA':4,
+	'JAVA':3,
 	'Bootstrap':4,
 	'JQuery':4,
 	'Command line':4,
