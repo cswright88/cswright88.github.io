@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+      <title>play with google map api</title>
+
+      <!-- Latest compiled and minified CSS for bootstrap-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <!-- Latest compiled JavaScript -->
+      
+
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      
+
+  </head>
+  <body>
+    <h3 id="header-title">My Google Maps</h3>
+    <img class="bgimg" data-bind="attr: {src: bgImg}">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3" id="sidebar">
+        <input type="text" placeholder="type to search" data-bind="textInput: search">
+          <ul id="sidebarUL" data-bind="foreach: listofPlaces">
+          <li><button class="list-button" data-bind="event: {mouseover: $root.backgroundAndInfo, click: $root.wikipedia }"><span data-bind="text: $data.locName"></span></button></li>
+          </ul>
+        </div>
+        <div class="col-sm-9" id="map"></div>
+      </div>
+      <div class="row">
+        <!-- <div class="col-sm-12" id="wiki"></div> -->
+        <div class="col-sm-12" id="wiki" data-bind="html: wiki">
+        
+        </div>
+      </div>
+    </div>
+<script src="js/knockout.js"></script>
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+    <!-- <script src="js/FinalMain.js"></script> -->
+        <script src="js/jQuery.js"></script>
+    <script src="js/main.js" async></script>
+
+     
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj1XINs64plzFKtfvarQSqkZnAmlhjzeI&callback=initMap">
+    </script>
+  </body>
+</html>

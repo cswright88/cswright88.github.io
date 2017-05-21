@@ -1,0 +1,49 @@
+/*style.css*/
+p, h1, h2, h3, h4, h5, h6, li {
+    color: black;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    background: rgba(255,255,255,0.5);
+    width: 100%;
+}
+
+button:hover {
+    background-color: lightgrey;
+}
+
+#header-title {
+    text-align: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#header-lowertitle {
+    text-align: center;
+}
+
+#wiki {
+    margin-top: 20px;
+    padding-top: 20px;
+    background: rgba(255,255,255,0.75);
+    color: black;
+}
+
+#map {
+    min-height: 300px;
+    min-width: auto;
+}
+
+.bgimg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
