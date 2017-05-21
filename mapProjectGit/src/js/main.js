@@ -103,7 +103,7 @@ var Places = function(label, locName, address, latitude, longitude, wiki) {
             currentmarkerViewed.closeinfoWindow();
         }
         self.infowindow.open(map, self.marker);
-        self.marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue.png');
+        self.marker.setIcon('https://maps.google.com/mapfiles/ms/icons/blue.png');
 
         currentmarkerViewed = self;
     });
@@ -159,12 +159,12 @@ var searchAndPlaces = function() {
             currentmarkerViewed.closeinfoWindow();
         }
         this.infowindow.open(map, this.marker);
-        this.marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue.png');
+        this.marker.setIcon('https://maps.google.com/mapfiles/ms/icons/blue.png');
         //wiki stuff
         var formStreet = this.address;
         var cityStr = "austin, tx";
         var address = formStreet + ' ' + cityStr;
-        var streetviewUrl = 'http://maps.googleapis.com/maps/api/streetview?size=600x400&location=' + address + '';
+        var streetviewUrl = 'https://maps.googleapis.com/maps/api/streetview?size=600x400&location=' + address + '';
         self.bgImg(streetviewUrl);
         currentmarkerViewed = this;
 
