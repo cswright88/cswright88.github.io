@@ -41,7 +41,7 @@ ninjaapp.controller('ctrl', ['$scope', function($scope) {
           $scope.echoArr.push("echo ${var"+x+"}, "+$scope.array[x]+" &&");
         }
         $scope.echoArr.push('echo done');
-        $scope.commandArr.push("echo "+$scope.secondTag+", "+$scope.firstTag+" &&");
+        $scope.commandArr.push("echo first_col, secondCol");
       }
       // elif after == true
       else if($scope.after.value === true){
@@ -50,7 +50,7 @@ ninjaapp.controller('ctrl', ['$scope', function($scope) {
           $scope.echoArr.push("echo ${var"+x+"}, "+$scope.array[x]+" &&");
         }
         $scope.echoArr.push('echo done');
-        $scope.commandArr.push("echo "+$scope.secondTag+", "+$scope.firstTag+" &&");
+        $scope.commandArr.push("echo first_col, secondCol");
       }else{
       // else do the below
         for(x=0;x<$scope.array.length;x++){
@@ -58,7 +58,7 @@ ninjaapp.controller('ctrl', ['$scope', function($scope) {
           $scope.echoArr.push("echo ${var"+x+"}, "+$scope.array[x]+" &&");
         }
         $scope.echoArr.push('echo done');
-        $scope.commandArr.push("echo "+$scope.secondTag+", "+$scope.firstTag+" &&");
+        $scope.commandArr.push("echo first_col, secondCol");
       }
     }
     // if checkbox value = true
@@ -70,7 +70,7 @@ ninjaapp.controller('ctrl', ['$scope', function($scope) {
           $scope.echoArr.push("echo ${var"+x+"}, "+$scope.array[x]+" &&");
         }
         $scope.echoArr.push('echo done');
-        $scope.commandArr.push("echo "+$scope.secondTag+", "+$scope.firstTag+" &&");
+        $scope.commandArr.push("echo first_col, secondCol");
       }
       // elif after == true
       else if($scope.after.value === true){
@@ -79,7 +79,7 @@ ninjaapp.controller('ctrl', ['$scope', function($scope) {
           $scope.echoArr.push("echo ${var"+x+"}, "+$scope.array[x]+" &&");
         }
         $scope.echoArr.push('echo done');
-        $scope.commandArr.push("echo "+$scope.secondTag+", "+$scope.firstTag+" &&");
+        $scope.commandArr.push("echo first_col, secondCol");
       }else{
       // else do the below
         for(x=0;x<$scope.array.length;x++){
@@ -87,7 +87,7 @@ ninjaapp.controller('ctrl', ['$scope', function($scope) {
           $scope.echoArr.push("echo ${var"+x+"}, "+$scope.array[x]+" &&");
         }
         $scope.echoArr.push('echo done');
-        $scope.commandArr.push("echo "+$scope.secondTag+", "+$scope.firstTag+" &&");
+        $scope.commandArr.push("echo first_col, secondCol");
       }
 
     };
