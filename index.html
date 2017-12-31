@@ -1,10 +1,83 @@
+<!Doctype HTML>
+
 <html>
 <head>
   <title>World between worlds</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Example</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Angular js latest -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 <!-- testing this comment to see if this github push works -->
-  <a href="https://cswright88.github.io/home.html">grep tool</a>
+
+
+<header>
+  <h1>Projects</h1>
+</header>
+<div id="main"></div>
+
+
+<script>
+var Links = [
+  {
+    name:"Grep Tool",
+    link:"https://cswright88.github.io/Grep_Tool/index.html"
+  },
+  {
+    name:"C-Resume",
+    link:"https://cswright88.github.io/C-resume"
+  },
+  {
+    name:"designCenter",
+    link:"https://cswright88.github.io/designCenter"
+  },
+  {
+    name:"frontend-nanodegree-arcade-game-master",
+    link:"https://cswright88.github.io/frontend-nanodegree-arcade-game-master"
+  },
+  {
+    name:"mapProject",
+    link:"https://cswright88.github.io/mapProject"
+  },
+  {
+    name:"minicourse-ajax-project",
+    link:"https://cswright88.github.io/minicourse-ajax-project"
+  },
+  {
+    name:"portfolio",
+    link:"https://cswright88.github.io/portfolio"
+  },
+  {
+    name:"resume",
+    link:"https://cswright88.github.io/resume"
+  },
+  {
+    name:"templete-2",
+    link:"https://cswright88.github.io/Templete-2"
+  },
+  {
+    name:"Website_Optimization",
+    link:"https://cswright88.github.io/Website_Optimization"
+  }
+];
+console.log(Links.length);
+for(i=0;i<Links.length;i++){
+  $('#main').append("<a href="+Links[i].link+">"+Links[i].name+"</a><br>");
+};
+
+
+</script>
+
 </body>
 </html>
