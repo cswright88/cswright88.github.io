@@ -1,0 +1,28 @@
+
+
+TODO:
+Where I left off -- I probably need to look into expanding the hashed password field in mysql and I need to look into the app.config way of doing things before I complete this.  Probably a problem with connecting to mysql db the way it's currently set up.  
+
+
+Queries I Used
+CREATE TABLE `BucketList`.`tbl_user` (
+  `user_id` BIGINT AUTO_INCREMENT,
+  `user_name` VARCHAR(45) NULL,
+  `user_username` VARCHAR(45) NULL,
+  `user_password` VARCHAR(45) NULL,
+  PRIMARY KEY (`user_id`));
+
+python3 Desktop/code/PythonFlaskMySQL/app.py
+
+less Desktop/.hidden/hide.txt
+
+alias mysql=/usr/local/mysql/bin/mysql
+
+Use Bucketlist;
+
+Select * from tbl_user;
+
+
+ALTER TABLE tbl_user
+MODIFY COLUMN user_password varchar(70) null;
+
