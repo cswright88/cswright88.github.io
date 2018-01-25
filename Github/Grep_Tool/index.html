@@ -43,7 +43,7 @@
           less {{fileName}}, is {{firstTag}} before or after the {{secondTag}}<br />
           Before:<input type="checkbox" ng-model="before.value" /> After:<input type="checkbox" ng-model="after.value" />
           <br />
-          How many lines <span ng-show="before.value">Before</span><span ng-show="after.value">After</span>:<input type="number" ng-model="num_lines.value" min="1" max="10" /><br />
+          How many lines <span ng-show="before.value">Before</span><span ng-show="after.value">After</span>:<input type="number" ng-model="num_lines.value" min="1" max="30" /><br />
           sort | uniq -c: <input type="checkbox" ng-model="checkboxModel.value" /><br />
           <input type="submit" />
         </div>
