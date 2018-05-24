@@ -1,70 +1,27 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- AngularJS framework -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-  <script src="app.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+<style>
+input[type=text] {
+   width: 500px;
+}
+</style>
 </head>
-<body ng-app='app' ng-controller='ctrl'>
-<!-- Begin app -->
+<body>
+
+<h1>Inner XML Parsing Tool Talroo</h1>
+<form action="" method="POST">
+    <span>URL:</span><input name="url" type="text" />
+    <input type="submit" value="Submit Form" />
+</form>
+<?php
+// $url = "https://account.webspidermount.com/download/post/MzU0MDIxNzcyMjM=/";
+$url = $_POST['url'];
+$xml = simplexml_load_file($url);
+print_r($xml);
+?>
+<script>
+</script>
 
 
-<header class="container">
-  <div class="jumbotron">
-    <h1> XML Tool
-    </h1>
-    <p>Testurl: </br>
-    https://account.webspidermount.com/download/post/MzU0MDIxNzcyMjM=/</p>
-  </div>
-</header>
-<!-- Make bootstrap container -->
-<div class="container">
-    <div class="row">
-      <form ng-submit="run()">
-          <input type="text" placeholder="URL" ng-model="url"/></br>
-          URL: {{url}}
-        <!-- <div class="col-xs-4">
-
-          The Name of your file in the /tmp Directory (make sure its formatted): <br />
-          <input type="text" placeholder="filename.xml" ng-model="fileName"/>
-        </div>
-        <div class="col-xs-4">
-          First Tag you are looking for:
-          <input type="text" placeholder="<company>" ng-model="firstTag"/><br />
-          name inside that tag <b>separate mulitple names or numbers with a comma</b>:
-          <textarea placeholder="Lyft,uber or 12345,54321" ng-model="firstInput"></textarea>
-        </div>
-        <div class="col-xs-4">
-          second Tag you are looking for:
-          <input type="text" placeholder="<cpc>" ng-model="secondTag"/><br />
-          less {{fileName}}, is {{firstTag}} before or after the {{secondTag}}<br />
-          Before:<input type="checkbox" ng-model="before.value" /> After:<input type="checkbox" ng-model="after.value" />
-          <br />
-          How many lines <span ng-show="before.value">Before</span><span ng-show="after.value">After</span>:<input type="number" ng-model="num_lines.value" min="1" max="30" /><br />
-          sort | uniq -c: <input type="checkbox" ng-model="checkboxModel.value" /><br /> -->
-          </br><input type="submit" />
-        </div>
-      </form>
-    </div>
-    <p ng-bind"xml">{{xml}}</p>
-    <div class="row">
-      <div class="col-xs-12">
-        <ul>
-          <li ng-repeat="x in titleArr track by $index">
-            {{x}}
-          </li>
-        </ul>
-      </div>
-    </div>
-    
-
-</div>
 </body>
+</html>
