@@ -1,0 +1,40 @@
+<!-- Begin Jobs2Careers Job Search -->
+<div id="j2c_block"></div> <!-- We recommend you create css rules for this container, e.g. height and width -->
+<script type="text/javascript" src="http://api.jobs2careers.com/api/j2c_api.min.js?v=1"></script>
+<script type="text/javascript">
+  /**
+   * - Options -
+   * container_id: id of the element into which the widget will be added | *required*
+   * api_id: your api id, e.g. 1234 | *required*
+   * api_password: your api password | *required*
+   * keywords: default keywords for the job search, e.g. 'sales' | optional but recommended
+   * location: city, state, or zipcode for the job search | *required*
+   * description_length: max character count for the description or -1 for no limit | optional but recommended
+   * use_full_description: true to use the full description, false to use the short description | optional
+   * is_title_search: true to search only in the job title, false otherwise | optional
+   * show_search_box: true to show the search box, false to hide it | optional
+   * show_nav_buttons: true to show the navigation buttons, false to hide them | optional
+   * show_company_logos: true to show the company logos, false to hide them | optional
+   * primary_colaor: hex code string for the primary color | optional
+   * height: height for the search widget | optional, css is recommended instead
+   * max_width: max width applied to the widget | optional, css is recommended instead
+   */
+  var j2c_search_options = {
+    container_id: 'j2c_block',
+    api_id: '4314',        // ** update with your api id **
+    api_password: 'P6N8ps2mveDDDMlu', // ** update with your api password **
+    keywords: '',     // ** update with the default search keywords **
+    location: 'Austin, TX',     // ** update with the default search location **
+    // description_length: -1,
+    // use_full_description: true,
+    // is_title_search: false,
+    // show_search_box: false,
+    // show_nav_buttons: false,
+    // show_company_logos: false,
+    // primary_color: '#04931f',
+    // height: 640,
+    // max_width: '75%',
+  };
+  j2c_search.init(j2c_search_options);
+</script>
+<!-- End Jobs2Careers Job Search -->
